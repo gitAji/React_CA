@@ -17,12 +17,6 @@ const Cart = () => {
       <Link to='/'><button>Home</button></Link>
       </div>;
 }
-
-
-const handleCheckOut = () => {
-  window.location.href = '/success';
-};
-
   return (
     <>
       <div className='checkout'>
