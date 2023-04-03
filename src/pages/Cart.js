@@ -20,8 +20,6 @@ const Cart = () => {
 
 
 const handleCheckOut = () => {
-
- 
   window.location.href = '/success';
 };
 
@@ -52,7 +50,7 @@ const handleCheckOut = () => {
 </div><hr className='line'/>
       </div>
       <div className='checkout-button'>      
-      <button onClick={handleCheckOut}>Checkout</button>
+      <Link to='/success'><button>Checkout</button></Link>
       </div>
 
  
