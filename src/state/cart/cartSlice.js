@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { storeCartItems } from '../../utils/localStorage';
 
 const initialState = {
   items: [],
@@ -34,7 +33,7 @@ export const cartSlice = createSlice({
         state.items.push(action.payload);
         state.total = state.total + action.payload.price;
       }
-      storeCartItems(state);
+     
     },
     updateQuantity: (state, action) => {
       let TotalQtyIndex = state.items.findIndex(
@@ -45,7 +44,7 @@ export const cartSlice = createSlice({
         (total, item) => total + item.price * item.qty,
         0
       );
-      storeCartItems(state);
+  
     },
     removeItem: (state, action) => {
       state.items = state.items.filter(
@@ -55,7 +54,7 @@ export const cartSlice = createSlice({
         (total, item) => total + item.price * item.qty,
         0
       );
-      storeCartItems(state);
+    
     },
    
     checkout: (state) => {
@@ -63,12 +62,7 @@ export const cartSlice = createSlice({
         items: state.items,
         total: state.total,
       };
-      storeCartItems(cartData);
-    },
-     clearCart: (state) => {
-      // Reset 
-      state.items = [];
-      state.total = 0;
+     
     },
   },
 });
