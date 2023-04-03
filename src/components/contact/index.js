@@ -2,7 +2,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import {userSchema} from './Schema';
-import { Form, Input, Button,Error,Right,Left,Heading,Paragraph,Image,Location,Phone } from './styles';
+import { Form, Input, Button,Error,Right,Left,Heading,Paragraph,Image,Location } from './styles';
 import { Row, Col } from 'antd';
 import Img from './office.jpg';
 

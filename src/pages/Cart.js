@@ -2,10 +2,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { removeItem, updateQuantity,checkout,clearCart } from '../state/cart/cartSlice';
 import {Link} from 'react-router-dom'
 import {CloseOutlined} from '@ant-design/icons' 
-import {storeCartItems} from '../utils/localStorage'
 
 const Cart = () => {
-  const { items, total } = useSelector((storeCartItems) => storeCartItems.cart  );
+  const { items, total } = useSelector((state) => state.cart  );
   const dispatch = useDispatch();
 
   const handleQuantityChange = (e, itemId) => {
