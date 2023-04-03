@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { removeItem, updateQuantity,checkout,clearCart } from '../state/cart/cartSlice';
+import { removeItem, updateQuantity } from '../state/cart/cartSlice';
 import {Link} from 'react-router-dom'
 import {CloseOutlined} from '@ant-design/icons' 
 
@@ -21,8 +21,7 @@ const Cart = () => {
 
 const handleCheckOut = () => {
 
-  dispatch(checkout());
-  dispatch(clearCart());
+ 
   window.location.href = '/success';
 };
 
