@@ -21,7 +21,7 @@ In the project directory, you can run:
 ### `npm start`
 
 # Netlify Link
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a4049312-1dff-4b22-87ea-c0bf7e2a549a/deploy-status)](https://app.netlify.com/sites/hm-mart/deploys)
 
 # References
 
