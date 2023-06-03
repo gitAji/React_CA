@@ -23,7 +23,7 @@ In the project directory, you can run:
 
 # Netlify Link
 
-[Live site](presentation-onlineshop.netlify.app)
+[Live site](www.presentation-onlineshop.netlify.app)
 # References
 
 # License 
