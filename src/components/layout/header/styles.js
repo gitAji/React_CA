@@ -147,5 +147,3 @@ export const CartIcon = styled.div`
     padding: 0.2rem;
   }
 `;
-
-//media queries
