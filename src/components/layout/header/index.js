@@ -6,7 +6,6 @@ import {
   LogoImage,
   Nav,
   RightIcons,
-  CartIcon,
   MenuIcon,
   MobileMenu,
 } from "./styles";
