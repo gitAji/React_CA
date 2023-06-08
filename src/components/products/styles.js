@@ -1,27 +1,25 @@
 import styled from "styled-components";
 
-export const Bottom = styled.div `
-display:flex;
-justify-content:center;
-padding:1rem;
-
+export const Bottom = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 `;
-export const Button = styled.button `
-padding-block:1rem;
-padding-inline:6rem;
-background-color:salmon;
-color:#fff;
-border:none;
-&:hover{
-    background-color:#F79C92;
-
-}`;
+export const Button = styled.button`
+  padding-block: 1rem;
+  padding-inline: 6rem;
+  background-color: salmon;
+  color: #fff;
+  border: none;
+  &:hover {
+    background-color: #f79c92;
+  }
+`;
 
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  flex-basis: 0;
+  flex: 1;
   justify-content: space-between;
   padding: 1rem;
   background-color: #fff;
@@ -31,14 +29,13 @@ export const Card = styled.div`
 `;
 
 export const CardImage = styled.div`
-width: 100%;
+  width: 100%;
   height: 300px;
   border-radius: 4px 4px 0 0;
   & img {
     width: 100%;
     height: 100%;
-    object-fit:cover;
-   
+    object-fit: cover;
   }
 `;
 
@@ -46,7 +43,7 @@ export const CardTitle = styled.h2`
   margin: 0;
   font-size: 1.25rem;
   font-weight: 500;
-  padding-block:1rem;
+  padding-block: 1rem;
 `;
 
 export const CardDescription = styled.p`
@@ -55,21 +52,19 @@ export const CardDescription = styled.p`
   line-height: 1.5;
 `;
 
-export const PriceDiv=styled.div`
-display:flex;
-justify-content:space-between;
+export const PriceDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
 `;
 export const CardPrice = styled.h3`
- padding-block:1rem;
- color:#FF6E4A;
-
-  `;
-  export const CardOffer = styled.h3`
-align-self:center;
- color:#FF6E4A;
-  font-weight:bold;
-  background-color:#FAC514;
-  padding-inline:1rem;
-  border-radius:2px;
-
-  `;
+  padding-block: 1rem;
+  color: #ff6e4a;
+`;
+export const CardOffer = styled.h3`
+  align-self: center;
+  color: #ff6e4a;
+  font-weight: bold;
+  background-color: #fac514;
+  padding-inline: 1rem;
+  border-radius: 2px;
+`;
