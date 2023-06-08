@@ -214,7 +214,7 @@ padding:1rem;
 @media only screen and (max-width: 767px) {
   .container {
     margin: 0;
-    padding: 0;
+    padding: 5;
   }
   
   .product {
